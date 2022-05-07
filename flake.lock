@@ -3,20 +3,22 @@
     "cppstl": {
       "inputs": {
         "flakeNimbleLib": [
+          "hpx-main",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "hpx-main",
           "nixpkgs"
         ],
         "src-cppstl-v0_5_0": "src-cppstl-v0_5_0"
       },
       "locked": {
         "dir": "v0_5_0",
-        "lastModified": 1651917810,
-        "narHash": "sha256-iqljauNkmNXaF3ZXsvUKhuVkGTBLrMLAUueS51EJ18c=",
+        "lastModified": 1651555346,
+        "narHash": "sha256-h/mKU15Th3qtjracRjyre9ihi8aOQdhW0LN/cKkhQ90=",
         "owner": "nim-nix-pkgs",
         "repo": "cppstl",
-        "rev": "b80b5f0e22c8ec01ea6127decfc1e4923d787e44",
+        "rev": "4d6e335ec673af01d6aa5f3e0fdbcb9760209d01",
         "type": "github"
       },
       "original": {
@@ -48,23 +50,54 @@
         "type": "github"
       }
     },
-    "jsony": {
+    "hpx-main": {
       "inputs": {
+        "cppstl": "cppstl",
         "flakeNimbleLib": [
           "flakeNimbleLib"
         ],
+        "jsony": "jsony",
         "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-hpx-main": "src-hpx-main"
+      },
+      "locked": {
+        "dir": "main",
+        "lastModified": 1651589732,
+        "narHash": "sha256-/MB5QTjOWcKcfEZpIdKamixe6m73vN3puSIrBUvncCA=",
+        "owner": "nim-nix-pkgs",
+        "repo": "hpx",
+        "rev": "5f34213fe15f7748faee4a2e0e3b65d724991140",
+        "type": "github"
+      },
+      "original": {
+        "dir": "main",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "hpx",
+        "type": "github"
+      }
+    },
+    "jsony": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "hpx-main",
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "hpx-main",
           "nixpkgs"
         ],
         "src-jsony-1_1_3": "src-jsony-1_1_3"
       },
       "locked": {
         "dir": "1_1_3",
-        "lastModified": 1651918053,
-        "narHash": "sha256-Ck2rHRha/bQgIVUit2irWAE4Y85Aiv1etmAqymK92rU=",
+        "lastModified": 1651555565,
+        "narHash": "sha256-2nGmBL3UNrnbQ1+TeLNE7yFdClugft2B6GEZR5q+UMc=",
         "owner": "nim-nix-pkgs",
         "repo": "jsony",
-        "rev": "b66ed5f2c6c4d62df3725042d03b7b0a8941d1e3",
+        "rev": "76f557a059969f2f8bb5e40e9fd40a96918b51dc",
         "type": "github"
       },
       "original": {
@@ -88,11 +121,9 @@
     },
     "root": {
       "inputs": {
-        "cppstl": "cppstl",
         "flakeNimbleLib": "flakeNimbleLib",
-        "jsony": "jsony",
-        "nixpkgs": "nixpkgs",
-        "src-hpx-main": "src-hpx-main"
+        "hpx-main": "hpx-main",
+        "nixpkgs": "nixpkgs"
       }
     },
     "src-cppstl-v0_5_0": {
